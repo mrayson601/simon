@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" media="screen" />
+
+
+</head>
+
+<body>
+  <div id="machineBox">
+    <div id="title">SIMON</div>
+
+    <div id="buttonBox">
+      <div id="1" class="center gameButton one">♠</div>
+      <div class="middle">
+        <div id="2" class="gameButton center2 two">♣</div>
+        <div id="status">⦿</div>
+        <div id="3" class="gameButton center2 three">♥</div>
+      </div>
+      <div id="4" class="center gameButton four">♦</div>
+    </div>
+    <div class="center">
+      <button class="buttonText" id="newGame">NEW GAME</button>
+      <button class="buttonText" id="strict">STRICT MODE</button>
+    </div>
+  </div>
+
+  <audio id="audio1" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+  <audio id="audio2" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+  <audio id="audio3" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+  <audio id="audio4" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+</body>
+<script src="javascript.js"></script>
+</html>

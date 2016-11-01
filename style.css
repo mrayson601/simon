@@ -1,0 +1,282 @@
+body {
+  background-color: white;
+}
+
+#machineBox {
+  padding: 30px;
+}
+
+#buttonBox {
+  background-color: #95A5A6;
+  margin: 40px auto 40px auto;
+  padding: 50px 0px;
+  vertical-align: center;
+  width: 300px;
+  height: 350px;
+  border-radius: 900px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.middle {
+  margin: 0 auto;
+  width: 80%;
+  height: 80px;
+  text-align: center;
+  background-color: transparent;
+}
+
+.center2 {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.gameButton {
+  font-size: 30px;
+  height: 80px;
+  width: 80px;
+  color: white;
+  vertical-align: center;
+  line-height: 80px;
+  border-radius: 90px;
+  border-style: solid;
+  border-color: white;
+  border-size: 4px;
+  transition: border-radius, 2s;
+  transition: 2s filter linear;
+}
+
+.gameButton.pressed {
+  -webkit-animation: highlight 0.5s 1;
+  -moz-animation: highlight 0.5s 1;
+  animation: highlight 0.5s 1;
+
+
+}
+
+@-webkit-keyframes highlight {
+  0% {
+    -webkit-filter: brightness(100%);
+    transform: rotate(0deg);
+    /* Standard syntax */
+  }
+  50% {
+    opacity: .5;
+    -webkit-filter: brightness(200%);
+  }
+  100% {
+    -webkit-filter: brightness(500%);
+    /* Standard syntax */
+  }
+}
+
+@-moz-keyframes highlight {
+  0% {
+    -webkit-filter: brightness(100%);
+    transform: rotate(0deg);
+    /* Standard syntax */
+  }
+  50% {
+    opacity: .5;
+    -webkit-filter: brightness(200%);
+  }
+  100% {
+    -webkit-filter: brightness(500%);
+    /* Standard syntax */
+  }
+}
+
+@keyframes highlight {
+  0% {
+    -webkit-filter: brightness(100%);
+    transform: rotate(0deg);
+    /* Standard syntax */
+  }
+  50% {
+    opacity: .5;
+    -webkit-filter: brightness(200%);
+  }
+  100% {
+    -webkit-filter: brightness(500%);
+    /* Standard syntax */
+  }
+}
+
+.flashCorrect {
+  -webkit-animation: flashCorrect 1s ease-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: flashCorrect 1s ease-out;
+  -moz-animation-iteration-count: 1;
+  animation: flashCorrect 1s ease-out;
+  animation-iteration-count: 1;
+}
+
+
+@-webkit-keyframes flashCorrect {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #88F159;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+
+
+@-moz-keyframes flashCorrect {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #88F159;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+
+
+@keyframes flashCorrect {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #88F159;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+
+
+
+.flashWrong {
+  -webkit-animation: flashWrong 1s ease-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: flashWrong 1s ease-out;
+  -moz-animation-iteration-count: 1;
+  animation: flashWrong 1s ease-out;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes flashWrong {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #FF6666;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+@-moz-keyframes flashWrong {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #FF6666;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+@keyframes flashWrong {
+  0% {
+    background-color: none;
+  }
+  50% {
+    background-color: #FF6666;
+  }
+  100% {
+    background-color: none;
+  }
+}
+
+
+#status {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 25px;
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.one {
+  background-color: #3498DB;
+}
+
+.two {
+  background-color: #1ABC9C;
+}
+
+.three {
+  background-color: #E74C3C;
+}
+
+.four {
+  background-color: #F1C40F;
+}
+
+button {
+  background-color: #9E58DC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 190px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 35px;
+  font-family: 'Anton', sans-serif;
+}
+
+.strict {
+  background-color: #383732 !important;
+}
+
+#title {
+  margin: auto;
+  width: 350px;
+  background-color: #9E58DC;
+  border: none;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 60px;
+  font-family: 'Anton', sans-serif;
+}
+
+.buttonText{
+  background-color: #9E58DC;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  width: 190px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 35px;
+  font-family: 'Anton', sans-serif;
+}
